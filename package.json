@@ -10,10 +10,11 @@
     "test:e2e": "cypress run",
     "test:e2e:headed": "cypress run --headed",
     "test:e2e:ci": "yarn start-server-and-test start:e2e http://localhost:8080 test:e2e",
-    "test:all": "yarn test:unit && yarn test:e2e:ci",
+    "test:all": "yarn lint && yarn test:unit && yarn test:e2e:ci",
     "start:e2e": "cross-env NODE_ENV=development webpack-dev-server --progress --hot --inline --mode development --config=webpack/e2e.js",
-    "start": "cross-env PORT=${PORT} NODE_ENV=development webpack-dev-server --progress --hot --inline --mode development --config=webpack/development.js",
+    "start": "yarn lint && cross-env PORT=${PORT} NODE_ENV=development webpack-dev-server --progress --hot --inline --mode development --config=webpack/development.js",
     "build": "yarn clean && cross-env NODE_ENV=production webpack --mode production --config=webpack/production.js",
+    "lint": "eslint --ignore-path .gitignore --format=node_modules/eslint-formatter-pretty src *.js",
     "production:deploy": "",
     "staging:deploy": ""
   },
