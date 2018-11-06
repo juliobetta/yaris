@@ -1,16 +1,16 @@
 import { get } from 'lodash';
 import { EN } from '../../src/app/config/constants';
-import langs from '../../src/app/i18n';
+import { resources } from '../../src/app/i18n';
 
 export default () => {
   const mockFn = () => (
     ({
-      t: jest.fn(translation => (
-        get(langs[EN], translation)
+      t: jest.fn(path => (
+        get(resources[EN].translation, path)
       ))
     })
   );
 
-  const I18nMock = jest.mock('react-redux-i18n', mockFn);
+  const I18nMock = jest.mock('../../src/app/i18n', mockFn);
   global.I18n = I18nMock;
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 import configureStore from './app/config/store';
-import loadTranslations from './app/config/i18n';
 import { PRODUCTION } from './app/config/constants';
 import './theme/main.less';
 
@@ -10,9 +9,6 @@ import './theme/main.less';
   const target = document.querySelector('main');
 
   const store = configureStore();
-  const state = store.getState();
-
-  loadTranslations({ store, state });
 
   ReactDOM.render(
     <App store={store} />,
