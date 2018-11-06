@@ -46,6 +46,14 @@ module.exports = merge(baseConfig, {
         ]
       },
       {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          cssLoader,
+          'less-loader'
+        ]
+      },
+      {
         test: require.resolve('../src/index.js'),
         loader: 'imports-loader',
         query: { offlineRuntime: 'offline-plugin/runtime' }

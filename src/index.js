@@ -4,7 +4,7 @@ import App from './app';
 import configureStore from './app/config/store';
 import loadTranslations from './app/config/i18n';
 import { PRODUCTION } from './app/config/constants';
-import './theme/index.scss';
+import './theme/main.less';
 
 (() => {
   const target = document.querySelector('main');

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { initialState, increment, decrement, reset } from './state';
-import Styles from './index.scss';
+import Styles from './index.less';
 
 
 class Counter extends PureComponent {
