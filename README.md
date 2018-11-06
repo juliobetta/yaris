@@ -54,7 +54,7 @@ The project is covered by tests using Jest and [Cypress](https://cypress.io).
 
 To unit tests, execute:
 
-    yarn test:unit
+    yarn test
 
 Please refer to [jest-cli documentation](https://jestjs.io/docs/en/cli) to see the available parameters that can be appended to the command above.
 

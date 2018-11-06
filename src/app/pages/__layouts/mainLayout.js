@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import { Route } from 'react-router';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 class BaseLayout extends PureComponent {
@@ -37,6 +36,4 @@ class BaseLayout extends PureComponent {
   );
 }
 
-export default connect(state => ({
-  locale: state.i18n.locale
-}))(BaseLayout);
+export default BaseLayout;
