@@ -34,7 +34,7 @@ dotenvFiles.filter(fs.existsSync).forEach(dotenvFile => {
     path: dotenvFile
   });
 
-  dotEnvVars = { ...dotEnvVars, ...envs.parsed };
+  dotEnvVars = Object.assign({}, dotEnvVars, envs.parsed);
 
   require('dotenv-expand')(envs)//eslint-disable-line
 });

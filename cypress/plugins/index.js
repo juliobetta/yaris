@@ -14,12 +14,5 @@ const webpack = require('@cypress/webpack-preprocessor');
 // the project's config changing)
 
 module.exports = on => {
-  const options = {
-    // send in the options from your webpack.config.js, so it works the same
-    // as your app's code
-    webpackOptions: require('../../webpack/e2e'), // eslint-disable-line
-    watchOptions: {}
-  };
-
-  on('file:preprocessor', webpack(options));
+  on('file:preprocessor', webpack());
 };

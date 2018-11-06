@@ -40,6 +40,14 @@ module.exports = merge(baseConfig, {
         ]
       },
       {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          cssLoader,
+          'less-loader'
+        ]
+      },
+      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
