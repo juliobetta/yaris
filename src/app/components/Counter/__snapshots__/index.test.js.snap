@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter> renders correctly 1`] = `
+<Counter
+  initialValue={1}
+  resetLabel="reset"
+  step={1}
+>
+  <div
+    className="Counter"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        –
+      </button>
+       
+       
+      <button
+        onClick={[Function]}
+      >
+        +
+      </button>
+       
+       
+      <button
+        className="reset"
+        onClick={[Function]}
+      >
+        reset
+      </button>
+    </div>
+    <span
+      className="counter"
+    >
+      1
+    </span>
+  </div>
+</Counter>
+`;

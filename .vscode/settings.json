@@ -1,0 +1,4 @@
+{
+  "javascript.validate.enable": false,
+  "workbench.editor.labelFormat": "short"
+}
