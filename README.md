@@ -7,11 +7,11 @@
 * Babel 7
 * Webpack 4
 * React-Router V4
+* Formik
 * Jest, for unit tests
 * Cypress, for integration tests
-* I18n
+* i18next
 * redux-thunk
-* redux-form
 * lodash
 * LESS and SCSS support
 * ... and it works offline!
