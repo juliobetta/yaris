@@ -1,4 +1,4 @@
-# REACT EDGE SETUP
+# YET ANOTHER REACT INITIAL SETUP (YARIS)
 
 ## Stack
 
@@ -13,6 +13,7 @@
 * redux-thunk
 * redux-form
 * lodash
+* LESS and SCSS support
 * ... and it works offline!
 
 
@@ -60,7 +61,7 @@ Please refer to [jest-cli documentation](https://jestjs.io/docs/en/cli) to see t
 
 ... and integration tests with:
 
-    yarn test:ci
+    yarn test:e2e:ci
 
 Make sure port 8080 is free to run the e2e server.
 
