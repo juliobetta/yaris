@@ -9,7 +9,7 @@ const COUNTER = '.counter';
 describe(`
   Feature: Dashboard
   When I access dashboard
-  I should to be able to interact with a Counter
+  I should be able to interact with a Counter
 `, () => {
   beforeEach(() => {
     cy.visit('http://localhost:8080/dashboard');
