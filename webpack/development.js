@@ -58,7 +58,6 @@ module.exports = merge(baseConfig, {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
